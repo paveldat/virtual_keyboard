@@ -4,6 +4,7 @@ from HandTrackingModule import handDetector
 from time import sleep
 import numpy as np
 import cvzone
+from pynput.keyboard import Controller
 
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
@@ -15,6 +16,7 @@ keys = [["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
         ["Z", "X", "C", "V", "B", "N", "M", ",", ".", "/"],
         ["<", " "]]
 finalText = ""
+keyboard = Controller()
 
 def drawALL(img, buttonList):
     imgNew = np.zeros_like(img, np.uint8)
@@ -65,8 +67,10 @@ while True:
                     cv2.putText(img, button.text, (x + 20, y + 65), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 4)
                     if button.text == "<":
                         finalText = finalText[:-1]
+                        keyboard.press(button.text)
                     else:
                         finalText += button.text
+                        keyboard.press(button.text)
                     sleep(0.15)
 
     cv2.rectangle(img, (50, 710), (700, 610), (175, 0, 175), cv2.FILLED)
