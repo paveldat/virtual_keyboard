@@ -28,3 +28,7 @@ Increment this number until you see your webcam.
 ## Keyboard
 <img src="https://github.com/paveldat/virtual_keyboard/blob/main/img/keyboard.png">
 
+Where:
+
+"<" - BACKSPACE
+" " - SPACE
