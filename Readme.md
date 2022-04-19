@@ -25,3 +25,6 @@ Increment this number until you see your webcam.
 ## Hand Landmarks
 <img src="https://github.com/paveldat/gesture_volume_control_v2/blob/main/img/HandLandmarks.png">
 
+## Keyboard
+<img src="https://github.com/paveldat/virtual_keyboard/blob/main/img/keyboard.png">
+
