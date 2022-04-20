@@ -67,7 +67,7 @@ while True:
                     cv2.putText(img, button.text, (x + 20, y + 65), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 4)
                     if button.text == "<":
                         finalText = finalText[:-1]
-                        keyboard.press(button.text)
+                        keyboard.press('\010')
                     else:
                         finalText += button.text
                         keyboard.press(button.text)
