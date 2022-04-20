@@ -36,3 +36,6 @@ Where:
 
 ## Result
 ![Alt Text](https://github.com/paveldat/virtual_keyboard/blob/main/img/result.gif)
+
+## Result using notepad
+![Alt Text](https://github.com/paveldat/virtual_keyboard/blob/main/img/result_notepad.gif)
